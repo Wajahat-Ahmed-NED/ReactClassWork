@@ -4,12 +4,18 @@ import { useState } from 'react';
 
 function App() {
   // react now uses function based components not class based components because it is easy for use
+  // const [inpVal,setInpVal]=useState('')
   const [inpValue,setInpVal]=useState('waji')
   let a="Almeer munna"
   let b=[1,2,3,5,4,6,7,8,0]
   const addItem=()=>{
     console.log("Add Item")
   }
+  // const addItem=()=>{
+  //   console.log(inpVal)
+  // }
+
+
   return (
     <div className="App">
      <h1>My name is {a}</h1>
@@ -25,6 +31,9 @@ function App() {
       })
     }</ul>
     
+    {/* <input onChange={(e)=>{setInpVal(e.target.value)}}placeholder="Enter ToDo" />
+     <button onClick={addItem}>ADD</button>
+     <h1>{inpVal}</h1> */}
     </div>
   );
 }
